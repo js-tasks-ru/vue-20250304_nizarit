@@ -2,7 +2,7 @@
 
 <template>
   <div class="stretch-container">
-    <slot />
+    <slot/>
   </div>
 </template>
 
@@ -12,9 +12,9 @@
   height: 100%;
 }
 
-.stretch-container > img,
-.stretch-container > video,
-.stretch-container > picture {
+:slotted(.stretch-container > img),
+:slotted(.stretch-container > video),
+:slotted(.stretch-container > picture) {
   object-fit: scale-down;
 }
 </style>
